@@ -1,11 +1,12 @@
 // API配置 - deephu.com 专用
-const API_BASE_URL = 'http://121.89.92.22:19000';
+const API_BASE_URL = 'http://deephu.com:19000';
 
 // 备用API地址
 const API_BACKUP_URLS = [
     'http://127.0.0.1:19000',
     'http://localhost:19000',
-    'http://172.24.85.42:19000'
+    'http://172.24.85.42:19000',
+    'http://101.126.133.100:19000'
 ];
 
 // 是否启用调试模式
