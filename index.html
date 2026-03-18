@@ -1130,25 +1130,7 @@
         }
     </style>
     <!-- API配置 -->
-    <script>
-        // 从URL参数或localStorage读取API地址
-        const urlParams = new URLSearchParams(window.location.search);
-        let apiUrl = urlParams.get('api') || localStorage.getItem('star_api_url') || '';
-        
-        // 如果没有配置，使用默认地址（公网IP）
-        if (!apiUrl) {
-            apiUrl = 'http://115.190.33.166:19000';
-            localStorage.setItem('star_api_url', apiUrl);
-        }
-        
-        // 设置全局API配置
-        window.API_BASE_URL = apiUrl;
-        
-        console.log('API地址:', apiUrl);
-        
-        // 保存API地址到localStorage
-        localStorage.setItem('star_api_url', apiUrl);
-    </script>
+    <script src="/static/api-config.js"></script>
 </head>
 <body>
     <!-- 加载遮罩 -->
